@@ -1,6 +1,6 @@
 # 🌍 Altamash Faraz's Travel Blog
 
-[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://altamash-faraz.github.io/Travel-Blog/)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://altamashtravelblog.vercel.app/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Responsive](https://img.shields.io/badge/Responsive-Design-blue)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
