@@ -23,7 +23,7 @@ Welcome to my personal travel blog! This website documents my adventures and exp
 
 ## 🚀 Demo
 
-🔗 **[View Live Demo](https://altamash-faraz.github.io/Travel-Blog/)**
+🔗 **[View Live Demo](https://altamashtravelblog.vercel.app/)**
 
 ## 📸 Screenshots
 
