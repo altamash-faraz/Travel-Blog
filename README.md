@@ -1,6 +1,6 @@
 # 🌍 Altamash Faraz's Travel Blog - Global Adventures Await
 
-[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://altamash-faraz.github.io/Travel-Blog/)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://altamashtravelblog.vercel.app/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -82,7 +82,7 @@ Each destination features:
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Demo](https://altamash-faraz.github.io/Travel-Blog/)**
+🔗 **[View Live Demo](https://altamashtravelblog.vercel.app/)**
 
 ## 📸 Screenshots
 
