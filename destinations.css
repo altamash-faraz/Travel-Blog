@@ -1,0 +1,46 @@
+/* Additional image backgrounds for travel destinations */
+
+/* These are CSS-generated backgrounds for different travel destinations */
+/* In a production environment, you would replace these with actual photos */
+
+.destination-tokyo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="30" r="20" fill="rgba(255,255,255,0.1)"/><rect x="20" y="60" width="60" height="30" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: cover;
+}
+
+.destination-bali {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%), 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,70 Q50,30 80,70 L80,80 L20,80 Z" fill="rgba(255,255,255,0.2)"/></svg>');
+    background-size: cover;
+}
+
+.destination-santorini {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="30" y="50" width="15" height="30" fill="rgba(255,255,255,0.9)"/><rect x="50" y="40" width="15" height="40" fill="rgba(255,255,255,0.9)"/></svg>');
+    background-size: cover;
+}
+
+.destination-dubai {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="10" width="10" height="70" fill="rgba(255,255,255,0.3)"/><rect x="30" y="30" width="8" height="50" fill="rgba(255,255,255,0.2)"/></svg>');
+    background-size: cover;
+}
+
+.destination-iceland {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,70 Q30,40 50,70 Q70,40 90,70 L90,90 L10,90 Z" fill="rgba(255,255,255,0.3)"/></svg>');
+    background-size: cover;
+}
+
+.destination-morocco {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="20" fill="rgba(255,255,255,0.2)"/><path d="M30,30 L70,30 L70,70 L30,70 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/></svg>');
+    background-size: cover;
+}
+
+.destination-norway {
+    background: linear-gradient(135deg, #00b894 0%, #00a085 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,60 Q25,30 50,60 Q75,30 100,60 L100,100 L0,100 Z" fill="rgba(255,255,255,0.2)"/></svg>');
+    background-size: cover;
+}

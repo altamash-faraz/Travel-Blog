@@ -1,27 +1,306 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Altamash Faraz's Travel Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <header class="background">
-        <h1>Altamash Faraz's Travel Blog</h1>
-        <nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join Altamash Faraz on his incredible travel adventures around the world. Discover amazing destinations, travel tips, and inspiring stories from a passionate traveler."
+    />
+    <meta
+      name="keywords"
+      content="travel blog, adventures, travel photography, destinations, travel stories, Altamash Faraz"
+    />
+    <meta name="author" content="Altamash Faraz" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Altamash Faraz's Travel Blog - Adventures Around the World"
+    />
+    <meta
+      property="og:description"
+      content="Join me on my incredible journey around the world. Discover amazing destinations and inspiring travel stories."
+    />
+    <meta property="og:image" content="tokyo.jpg" />
+    <meta
+      property="og:url"
+      content="https://altamash-faraz.github.io/Travel-Blog/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Altamash Faraz's Travel Blog" />
+    <meta
+      name="twitter:description"
+      content="Adventures and stories from around the world"
+    />
+    <meta name="twitter:image" content="tokyo.jpg" />
+
+    <title>Altamash Faraz's Travel Blog - Adventures Around the World</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="index.html" class="brand-link">
+            <i class="fas fa-globe-americas"></i>
+            <span>Altamash Faraz</span>
+          </a>
+        </div>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item" role="none">
+            <a
+              href="index.html"
+              class="nav-link active"
+              role="menuitem"
+              aria-current="page"
+            >
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">
+              <i class="fas fa-user"></i> About
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="blog.html" class="nav-link" role="menuitem">
+              <i class="fas fa-blog"></i> Blog
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="contact.html" class="nav-link" role="menuitem">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+      <section class="hero" aria-label="Welcome section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Altamash Faraz</span>
+            </h1>
+            <p class="hero-subtitle">
+              Follow me on my journey around the
+              <strong><em>world!</em></strong>
+            </p>
+            <div class="hero-buttons">
+              <a href="blog.html" class="btn btn-primary">
+                <i class="fas fa-compass"></i> Explore Adventures
+              </a>
+              <a href="about.html" class="btn btn-secondary">
+                <i class="fas fa-user"></i> Learn About Me
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="featured-destinations" aria-label="Featured destinations">
+        <div class="container">
+          <h2 class="section-title">Featured Destinations</h2>
+          <div class="destinations-grid">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img
+                  src="tokyo.jpg"
+                  alt="Tokyo skyline with modern skyscrapers at night"
+                  loading="lazy"
+                />
+                <div class="destination-overlay">
+                  <h3>Tokyo, Japan</h3>
+                  <p>Where tradition meets innovation</p>
+                </div>
+              </div>
+            </div>
+            <div class="destination-card">
+              <div class="destination-image">
+                <img
+                  src="iceland.jpg"
+                  alt="Dramatic Iceland landscapes with waterfalls"
+                  loading="lazy"
+                />
+                <div class="destination-overlay">
+                  <h3>Iceland</h3>
+                  <p>Land of fire and ice</p>
+                </div>
+              </div>
+            </div>
+            <div class="destination-card">
+              <div class="destination-image">
+                <img
+                  src="santorini.jpg"
+                  alt="White buildings of Santorini against blue sea"
+                  loading="lazy"
+                />
+                <div class="destination-overlay">
+                  <h3>Santorini, Greece</h3>
+                  <p>Cliffside paradise</p>
+                </div>
+              </div>
+            </div>
+            <div class="destination-card">
+              <div class="destination-image">
+                <img
+                  src="bali.jpg"
+                  alt="Lush green rice terraces in Bali"
+                  loading="lazy"
+                />
+                <div class="destination-overlay">
+                  <h3>Bali, Indonesia</h3>
+                  <p>Tropical paradise found</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="blog.html" class="btn btn-outline">View All Stories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Links -->
+      <section class="social-section" aria-label="Social media links">
+        <div class="container">
+          <h2 class="section-title">Connect With Me</h2>
+          <div class="social-links">
+            <a
+              href="https://instagram.com/altamashfaraz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow me on Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/altamashfaraz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow me on Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/altamashfaraz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect with me on LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/altamash-faraz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Check out my GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>
+              <i class="fas fa-globe-americas"></i> Altamash Faraz's Travel Blog
+            </h3>
+            <p>
+              Documenting adventures and inspiring wanderlust, one destination
+              at a time.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a>About Me</a></li>
-                <li><a href="blog.html">Blog</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="journey-image">
-        <p class=" journey-text background">Hi,I'm Altamash Faraz <br> Follow me on my journey
-             around the<strong> <em> world! </em> </strong>  
-        </p>
-    </div>
-</body>
+          </div>
+          <div class="footer-section">
+            <h4>Follow the Journey</h4>
+            <div class="footer-social">
+              <a
+                href="https://instagram.com/altamashfaraz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/altamashfaraz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Altamash Faraz. All rights reserved. Built with ❤️ for
+            fellow travelers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>

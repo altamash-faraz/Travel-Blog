@@ -1,168 +1,444 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read Altamash Faraz's travel adventures, stories, and tips from destinations around the world."
+    />
+    <meta
+      name="keywords"
+      content="travel blog, travel stories, Venice travel, adventure travel, travel photography"
+    />
+    <title>Travel Blog - Altamash Faraz's Adventures</title>
 
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Altamash Faraz's Travel Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>"
+    />
 
-</head>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-    <header class="background">
-        <h1>Altamash Faraz's Travel Blog</h1>
-        <nav>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="index.html" class="brand-link">
+            <i class="fas fa-globe-americas"></i>
+            <span>Altamash Faraz</span>
+          </a>
+        </div>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="index.html" class="nav-link" role="menuitem">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">
+              <i class="fas fa-user"></i> About
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a
+              href="blog.html"
+              class="nav-link active"
+              role="menuitem"
+              aria-current="page"
+            >
+              <i class="fas fa-blog"></i> Blog
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="contact.html" class="nav-link" role="menuitem">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="blog-page">
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">Travel Adventures</h1>
+          <p class="page-subtitle">
+            Stories, tips, and experiences from around the world
+          </p>
+        </div>
+      </section>
+
+      <!-- Blog Filter -->
+      <section class="blog-filter">
+        <div class="container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              All Stories
+            </button>
+            <button class="filter-btn" data-filter="adventure">
+              Adventure
+            </button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="photography">
+              Photography
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Posts -->
+      <section class="blog-posts">
+        <div class="container">
+          <div class="posts-grid">
+            <!-- Featured Post -->
+            <article
+              class="blog-post featured"
+              data-category="culture adventure"
+            >
+              <div class="post-image">
+                <img
+                  src="tokyo.jpg"
+                  alt="Tokyo cityscape with modern skyscrapers and neon lights"
+                  loading="lazy"
+                />
+                <div class="post-badge">Featured</div>
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> December 15, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 8 min read
+                  </span>
+                </div>
+                <h2 class="post-title">
+                  Tokyo: Where Tradition Meets Innovation
+                </h2>
+                <div class="post-tags">
+                  <span class="tag">Tokyo</span>
+                  <span class="tag">Japan</span>
+                  <span class="tag">Culture</span>
+                  <span class="tag">Urban</span>
+                </div>
+                <p class="post-excerpt">
+                  Exploring the electric energy of Tokyo's bustling streets,
+                  from ancient temples to cutting-edge technology. This
+                  incredible city offers a perfect blend of traditional Japanese
+                  culture and futuristic innovation that left me mesmerized...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read Full Story
+                </a>
+              </div>
+            </article>
+
+            <!-- Regular Posts -->
+            <article class="blog-post" data-category="adventure photography">
+              <div class="post-image">
+                <img
+                  src="iceland.jpg"
+                  alt="Breathtaking Iceland waterfalls and dramatic landscapes"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> November 28, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 6 min read
+                  </span>
+                </div>
+                <h3 class="post-title">Iceland: Land of Fire and Ice</h3>
+                <div class="post-tags">
+                  <span class="tag">Iceland</span>
+                  <span class="tag">Nature</span>
+                  <span class="tag">Photography</span>
+                </div>
+                <p class="post-excerpt">
+                  Witnessing the raw power of nature in Iceland's dramatic
+                  landscapes. From thundering waterfalls to the Northern Lights,
+                  this Nordic island offers some of the most spectacular scenery
+                  on Earth...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read More
+                </a>
+              </div>
+            </article>
+
+            <article class="blog-post" data-category="food culture">
+              <div class="post-image">
+                <img
+                  src="bali.jpg"
+                  alt="Lush Bali rice terraces and tropical paradise"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> November 10, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 5 min read
+                  </span>
+                </div>
+                <h3 class="post-title">Bali: Paradise Found in Indonesia</h3>
+                <div class="post-tags">
+                  <span class="tag">Bali</span>
+                  <span class="tag">Indonesia</span>
+                  <span class="tag">Culture</span>
+                  <span class="tag">Paradise</span>
+                </div>
+                <p class="post-excerpt">
+                  Discovering the spiritual heart of Bali through its stunning
+                  rice terraces, ancient temples, and warm-hearted people. This
+                  tropical paradise offers the perfect blend of adventure and
+                  tranquility...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read More
+                </a>
+              </div>
+            </article>
+
+            <article class="blog-post" data-category="adventure">
+              <div class="post-image">
+                <img
+                  src="dubai.jpg"
+                  alt="Dubai's futuristic skyline and modern architecture"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> October 22, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 7 min read
+                  </span>
+                </div>
+                <h3 class="post-title">Dubai: Where Dreams Touch the Sky</h3>
+                <div class="post-tags">
+                  <span class="tag">Dubai</span>
+                  <span class="tag">UAE</span>
+                  <span class="tag">Luxury</span>
+                  <span class="tag">Architecture</span>
+                </div>
+                <p class="post-excerpt">
+                  Experiencing the incredible transformation of Dubai from
+                  desert to a world-class metropolis. From the tallest building
+                  to artificial islands, this city constantly pushes the
+                  boundaries of what's possible...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read More
+                </a>
+              </div>
+            </article>
+
+            <article class="blog-post" data-category="photography culture">
+              <div class="post-image">
+                <img
+                  src="santorini.jpg"
+                  alt="Stunning white architecture of Santorini against blue Aegean Sea"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> October 5, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 4 min read
+                  </span>
+                </div>
+                <h3 class="post-title">Santorini: A Greek Island Dream</h3>
+                <div class="post-tags">
+                  <span class="tag">Santorini</span>
+                  <span class="tag">Greece</span>
+                  <span class="tag">Islands</span>
+                  <span class="tag">Photography</span>
+                </div>
+                <p class="post-excerpt">
+                  Watching the world's most famous sunset from Oia's
+                  white-washed cliffs. Santorini's dramatic volcanic landscape
+                  and azure waters create a photographer's paradise unlike
+                  anywhere else on Earth...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read More
+                </a>
+              </div>
+            </article>
+
+            <article class="blog-post" data-category="culture">
+              <div class="post-image">
+                <img
+                  src="morocco.jpg"
+                  alt="Vibrant markets and traditional architecture of Morocco"
+                  loading="lazy"
+                />
+              </div>
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-date">
+                    <i class="fas fa-calendar"></i> September 18, 2024
+                  </span>
+                  <span class="post-read-time">
+                    <i class="fas fa-clock"></i> 6 min read
+                  </span>
+                </div>
+                <h3 class="post-title">Morocco: Colors of the Sahara</h3>
+                <div class="post-tags">
+                  <span class="tag">Morocco</span>
+                  <span class="tag">Culture</span>
+                  <span class="tag">Sahara</span>
+                  <span class="tag">Adventure</span>
+                </div>
+                <p class="post-excerpt">
+                  Getting lost in the vibrant souks of Marrakech and sleeping
+                  under the stars in the Sahara Desert. Morocco's rich culture
+                  and hospitality created unforgettable memories that will last
+                  a lifetime...
+                </p>
+                <a href="#" class="read-more-btn">
+                  <i class="fas fa-arrow-right"></i> Read More
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-section">
+            <button class="btn btn-outline load-more-btn">
+              <i class="fas fa-plus"></i> Load More Stories
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Signup -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Never Miss an Adventure</h2>
+            <p>
+              Subscribe to get the latest travel stories, tips, and destination
+              guides delivered to your inbox.
+            </p>
+            <form class="newsletter-form" action="#" method="post">
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                  aria-label="Email address for newsletter"
+                />
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+              </div>
+              <p class="newsletter-privacy">
+                No spam, just great travel content. Unsubscribe anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>
+              <i class="fas fa-globe-americas"></i> Altamash Faraz's Travel Blog
+            </h3>
+            <p>
+              Documenting adventures and inspiring wanderlust, one destination
+              at a time.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a>About Me</a></li>
-                <li><a href="blog.html">Blog</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="journey-image">
-        <p class=" journey-text background">Hi,I'm Altamash Faraz <br> Follow me on my journey
-            around the<strong> <em> world! </em> </strong>
-        </p>
-    </div>
-    <div class="wrapper">
-        <main>
-            <article class="background">
-                <header>
-                    <h2>Blog post 1</h2>
-                    <ul>
-                        <li>Author: <em>Altamash Faraz</em></li>
-                        <li>Tagged: <em>venice, short break, buckerlist</em></li>
-                        <li>Created: <em>5 days ago</em></li>
-                    </ul>
-                </header>
-                <section>
-                    <img class="blog-image" src="venice.jpg" alt="venice image">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi felis, congue a aliquet et,
-                        tristique eu justo. Duis lacinia metus a metus accumsan molestie. Donec accumsan et sem ac
-                        pulvinar. Phasellus sodales magna a tempus finibus. Vivamus sit amet tristique turpis. Etiam non
-                        sagittis mauris. Ut tincidunt felis bibendum nulla aliquet sodales. Maecenas auctor ac metus sed
-                        pharetra. Vestibulum et elementum mauris. In et enim molestie tortor faucibus ullamcorper. Nulla
-                        facilisi. Mauris orci massa, malesuada vel maximus non, venenatis porttitor mi.
+          </div>
+          <div class="footer-section">
+            <h4>Follow the Journey</h4>
+            <div class="footer-social">
+              <a
+                href="https://instagram.com/altamashfaraz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/altamashfaraz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Altamash Faraz. All rights reserved. Built with ❤️ for
+            fellow travelers.
+          </p>
+        </div>
+      </div>
+    </footer>
 
-                        Pellentesque in tincidunt tellus. Aenean eleifend dui at velit egestas ultrices. Ut interdum
-                        ornare tempor. Fusce mattis lectus id leo elementum facilisis. Morbi ultricies finibus libero.
-                        In cursus odio nisl, vel vestibulum nibh convallis id. Vestibulum nisl sapien, rutrum dignissim
-                        eros rhoncus, venenatis tincidunt orci. In molestie metus nisl, vitae lacinia odio ultricies
-                        eget. Fusce eu sapien justo. Cras lacinia quam sem, sed euismod magna gravida et. Proin sed
-                        pharetra velit. Duis non risus in neque porta porttitor vehicula id elit. Vivamus hendrerit
-                        augue nunc, non vehicula felis rhoncus ut. Sed gravida ipsum eget luctus congue. Phasellus vitae
-                        malesuada diam.
-                    </p>
-                    <a href="#">Read more...</a>
-                </section>
-            </article>
-            <article class="background">
-                <header>
-                    <h2>Blog post 2</h2>
-                    <ul>
-                        <li>Author: <em>Altamash Faraz</em></li>
-                        <li>Tagged: <em>venice, short break, buckerlist</em></li>
-                        <li>Created: <em>5 days ago</em></li>
-                    </ul>
-                </header>
-                <section>
-                    <img class="blog-image" src="venice.jpg" alt="venice image">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi felis, congue a aliquet et,
-                        tristique eu justo. Duis lacinia metus a metus accumsan molestie. Donec accumsan et sem ac
-                        pulvinar. Phasellus sodales magna a tempus finibus. Vivamus sit amet tristique turpis. Etiam non
-                        sagittis mauris. Ut tincidunt felis bibendum nulla aliquet sodales. Maecenas auctor ac metus sed
-                        pharetra. Vestibulum et elementum mauris. In et enim molestie tortor faucibus ullamcorper. Nulla
-                        facilisi. Mauris orci massa, malesuada vel maximus non, venenatis porttitor mi.
-
-                        Pellentesque in tincidunt tellus. Aenean eleifend dui at velit egestas ultrices. Ut interdum
-                        ornare tempor. Fusce mattis lectus id leo elementum facilisis. Morbi ultricies finibus libero.
-                        In cursus odio nisl, vel vestibulum nibh convallis id. Vestibulum nisl sapien, rutrum dignissim
-                        eros rhoncus, venenatis tincidunt orci. In molestie metus nisl, vitae lacinia odio ultricies
-                        eget. Fusce eu sapien justo. Cras lacinia quam sem, sed euismod magna gravida et. Proin sed
-                        pharetra velit. Duis non risus in neque porta porttitor vehicula id elit. Vivamus hendrerit
-                        augue nunc, non vehicula felis rhoncus ut. Sed gravida ipsum eget luctus congue. Phasellus vitae
-                        malesuada diam.
-                    </p>
-                    <a href="#">Read more...</a>
-                </section>
-            </article>
-            <article class="background">
-                <header>
-                    <h2>Blog post 3</h2>
-                    <ul>
-                        <li>Author: <em>Altamash Faraz</em></li>
-                        <li>Tagged: <em>venice, short break, buckerlist</em></li>
-                        <li>Created: <em>5 days ago</em></li>
-                    </ul>
-                </header>
-                <section>
-                    <img class="blog-image" src="venice.jpg" alt="venice image">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi felis, congue a aliquet et,
-                        tristique eu justo. Duis lacinia metus a metus accumsan molestie. Donec accumsan et sem ac
-                        pulvinar. Phasellus sodales magna a tempus finibus. Vivamus sit amet tristique turpis. Etiam non
-                        sagittis mauris. Ut tincidunt felis bibendum nulla aliquet sodales. Maecenas auctor ac metus sed
-                        pharetra. Vestibulum et elementum mauris. In et enim molestie tortor faucibus ullamcorper. Nulla
-                        facilisi. Mauris orci massa, malesuada vel maximus non, venenatis porttitor mi.
-
-                        Pellentesque in tincidunt tellus. Aenean eleifend dui at velit egestas ultrices. Ut interdum
-                        ornare tempor. Fusce mattis lectus id leo elementum facilisis. Morbi ultricies finibus libero.
-                        In cursus odio nisl, vel vestibulum nibh convallis id. Vestibulum nisl sapien, rutrum dignissim
-                        eros rhoncus, venenatis tincidunt orci. In molestie metus nisl, vitae lacinia odio ultricies
-                        eget. Fusce eu sapien justo. Cras lacinia quam sem, sed euismod magna gravida et. Proin sed
-                        pharetra velit. Duis non risus in neque porta porttitor vehicula id elit. Vivamus hendrerit
-                        augue nunc, non vehicula felis rhoncus ut. Sed gravida ipsum eget luctus congue. Phasellus vitae
-                        malesuada diam.
-                    </p>
-                    <a href="#">Read more...</a>
-                </section>
-            </article>
-            <article class="background">
-                <header>
-                    <h2>Blog post 4</h2>
-                    <ul>
-                        <li>Author: <em>Altamash Faraz</em></li>
-                        <li>Tagged: <em>venice, short break, buckerlist</em></li>
-                        <li>Created: <em>5 days ago</em></li>
-                    </ul>
-                </header>
-                <section>
-                    <img class="blog-image" src="venice.jpg" alt="venice image">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi felis, congue a aliquet et,
-                        tristique eu justo. Duis lacinia metus a metus accumsan molestie. Donec accumsan et sem ac
-                        pulvinar. Phasellus sodales magna a tempus finibus. Vivamus sit amet tristique turpis. Etiam non
-                        sagittis mauris. Ut tincidunt felis bibendum nulla aliquet sodales. Maecenas auctor ac metus sed
-                        pharetra. Vestibulum et elementum mauris. In et enim molestie tortor faucibus ullamcorper. Nulla
-                        facilisi. Mauris orci massa, malesuada vel maximus non, venenatis porttitor mi.
-
-                        Pellentesque in tincidunt tellus. Aenean eleifend dui at velit egestas ultrices. Ut interdum
-                        ornare tempor. Fusce mattis lectus id leo elementum facilisis. Morbi ultricies finibus libero.
-                        In cursus odio nisl, vel vestibulum nibh convallis id. Vestibulum nisl sapien, rutrum dignissim
-                        eros rhoncus, venenatis tincidunt orci. In molestie metus nisl, vitae lacinia odio ultricies
-                        eget. Fusce eu sapien justo. Cras lacinia quam sem, sed euismod magna gravida et. Proin sed
-                        pharetra velit. Duis non risus in neque porta porttitor vehicula id elit. Vivamus hendrerit
-                        augue nunc, non vehicula felis rhoncus ut. Sed gravida ipsum eget luctus congue. Phasellus vitae
-                        malesuada diam.
-                    </p>
-                    <a href="#">Read more...</a>
-                </section>
-            </article>
-        </main>
-        <aside>
-                <section class="sidebar-widget background">
-                        <h2>Follow me on:</h2>
-                        <hr>
-                        <div class="social">
-                            <i class="fab fa-facebook fa-3x"></i> 
-                            <i class="fab fa-instagram fa-3x"></i> 
-                            <i class="fab fa-twitter fa-3x"></i>
-                             
-                        </div>
-                </section>
-        </aside>
-    </div>
-</body>
-
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
